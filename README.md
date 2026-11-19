@@ -8,8 +8,8 @@
 
 ## 🌐 Links do Projeto
 
-- **Repositório GitHub:** `https://github.com/SEU_USUARIO/petshop-web` *(substituir pelo seu usuário após o push)*
-- **Sistema Web em Produção (GitHub Pages):** `https://SEU_USUARIO.github.io/petshop-web/` *(substituir pelo seu usuário após a publicação)*
+- **Repositório GitHub:** `https://github.com/theKormann/petshop-web` 
+- **Sistema Web em Produção (GitHub Pages):** `https://theKormann.github.io/petshop-web/`
 
 ---
 
@@ -91,30 +91,3 @@ petshop-web/
 - **Aula 5 (Semântica Estrutural e Formulários):** Tags semânticas `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`; formulário de agendamento com `<form>`, `<fieldset>`, `<legend>`, `<label for="...">`, `<input>`, `<select>`, `<textarea>` e `<button>`.
 
 ---
-
-## 🚀 5. Como Publicar no GitHub e GitHub Pages
-
-1. **Inicializar o repositório local e fazer o commit:**
-   ```bash
-   cd petshop-web
-   git init
-   git add .
-   git commit -m "feat: entrega Fase 1 do Projeto Petshop - Fundamentos WEB"
-   ```
-
-2. **Criar o repositório no GitHub.com:**
-   - Acesse [GitHub.com](https://github.com) e crie um novo repositório chamado `petshop-web` (público).
-   - Vincule o repositório remoto e envie os arquivos:
-     ```bash
-     git branch -M main
-     git remote add origin https://github.com/SEU_USUARIO/petshop-web.git
-     git push -u origin main
-     ```
-
-3. **Ativar o GitHub Pages:**
-   - No GitHub, acesse a aba **Settings** (Configurações) do repositório `petshop-web`.
-   - No menu lateral esquerdo, clique em **Pages**.
-   - Em **Build and deployment** -> **Source**, selecione `Deploy from a branch`.
-   - Em **Branch**, selecione `main` e a pasta `/ (root)`. Clique em **Save**.
-   - Aguarde de 1 a 2 minutos. O link do seu site estará disponível em:
-     `https://SEU_USUARIO.github.io/petshop-web/`
