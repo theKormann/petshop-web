@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220">
+  <rect width="320" height="220" rx="10" fill="#f9f9f9" stroke="#bdc3c7" stroke-width="1"/>
+  <!-- Feed bag -->
+  <polygon points="120,45 200,45 208,165 112,165" fill="#8e44ad" stroke="#5b2c6f" stroke-width="2"/>
+  <rect x="130" y="70" width="60" height="60" rx="5" fill="#ffffff"/>
+  <text x="160" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#8e44ad">GATOS</text>
+  <text x="160" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50">CASTRADOS</text>
+  <text x="160" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c">♥ SALMÃO</text>
+  <text x="160" y="152" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">3 KG</text>
+  <text x="160" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Ração Salmão Gatos Castrados (3kg)</text>
+</svg>

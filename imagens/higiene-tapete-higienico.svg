@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220">
+  <rect width="320" height="220" rx="10" fill="#f9f9f9" stroke="#bdc3c7" stroke-width="1"/>
+  <!-- Mat illustration -->
+  <polygon points="70,140 160,80 250,140 160,175" fill="#34495e" stroke="#1a252f" stroke-width="2"/>
+  <polygon points="80,138 160,85 240,138 160,170" fill="#ecf0f1"/>
+  <polygon points="95,135 160,92 225,135 160,163" fill="#bdc3c7" stroke="#7f8c8d" stroke-dasharray="3,3"/>
+  <text x="160" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50">CARVÃO ATIVADO</text>
+  <text x="160" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Tapete Higiênico 80x60 (30 un.)</text>
+</svg>
