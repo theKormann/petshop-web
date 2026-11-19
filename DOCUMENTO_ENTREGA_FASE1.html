@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto da Disciplina - Fase 1 - Fundamentos WEB</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+        body {
+            font-family: "Calibri", "Arial", sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #222;
+            margin: 0;
+            padding: 20px;
+        }
+        .header-box {
+            border-bottom: 2px solid #003366;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .institution-title {
+            font-size: 15pt;
+            font-weight: bold;
+            color: #003366;
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
+        }
+        .course-info {
+            font-size: 11pt;
+            color: #444;
+            margin: 2px 0;
+        }
+        .doc-title {
+            font-size: 16pt;
+            font-weight: bold;
+            color: #111;
+            margin: 20px 0 10px 0;
+            text-align: center;
+        }
+        .student-box {
+            background-color: #f4f6f9;
+            border-left: 4px solid #003366;
+            padding: 10px 15px;
+            margin: 15px 0 25px 0;
+        }
+        h2 {
+            font-size: 13pt;
+            color: #003366;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 4px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 11.5pt;
+            color: #222;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+        p, li {
+            text-align: justify;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 10pt;
+        }
+        th, td {
+            border: 1px solid #aaa;
+            padding: 7px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #e9eef4;
+            color: #003366;
+            font-weight: bold;
+        }
+        .alert-box {
+            background-color: #fff8e1;
+            border: 1px solid #ffe082;
+            border-left: 4px solid #ffb300;
+            padding: 10px 15px;
+            margin: 15px 0;
+            font-size: 10pt;
+        }
+        .code-box {
+            background-color: #f8f9fa;
+            border: 1px solid #e1e4e8;
+            padding: 10px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 9.5pt;
+            border-radius: 4px;
+            white-space: pre-wrap;
+        }
+        .page-break {
+            page-break-before: always;
+        }
+        @media print {
+            body { padding: 0; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="no-print" style="background: #27ae60; color: white; padding: 12px; text-align: center; font-weight: bold; margin-bottom: 20px; border-radius: 5px;">
+        💡 DICA: Esta página está pronta para impressão acadêmica. Para gerar o seu arquivo PDF oficial, basta pressionar <strong>Ctrl + P</strong> (ou menu Imprimir do navegador), selecionar a opção <em>"Salvar como PDF"</em> e salvar!
+    </div>
+
+    <div class="header-box">
+        <div class="institution-title">Pontifícia Universidade Católica do Rio Grande do Sul – PUCRS</div>
+        <div class="course-info"><strong>Programa:</strong> Graduação Online (Escola Politécnica)</div>
+        <div class="course-info"><strong>Disciplina:</strong> Fundamentos WEB</div>
+        <div class="course-info"><strong>Etapa de Avaliação:</strong> Projeto da Disciplina – Fase 1</div>
+    </div>
+
+    <h1 class="doc-title">RELATÓRIO DE ENTREGA: SISTEMA WEB PARA PETSHOP (FASE 1)</h1>
+
+    <div class="student-box">
+        <div><strong>Estudante:</strong> Matheus Kormann</div>
+        <div><strong>Projeto:</strong> Plataforma Web do Pet Amigo Petshop &amp; Centro de Estética Animal</div>
+        <div><strong>Escopo Técnico:</strong> Estruturação Front-End em HTML5 Puro (Semântica, Acessibilidade W3C e Navegação)</div>
+        <div><strong>Ano Letivo:</strong> 2026</div>
+    </div>
+
+    <h2>1. LINKS OBRIGATÓRIOS DO PROJETO</h2>
+    <p>Conforme solicitado nas instruções de entrega da Fase 1, seguem os links de acesso público:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 30%;">Identificação do Recurso</th>
+                <th style="width: 45%;">URL de Acesso Público</th>
+                <th style="width: 25%;">Conteúdo Hospedado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Repositório GitHub (Código-Fonte)</strong></td>
+                <td><code>https://github.com/SEU_USUARIO/petshop-web</code></td>
+                <td>Arquivos HTML5 semânticos, imagens locais em SVG e arquivo de ajuda (README.md).</td>
+            </tr>
+            <tr>
+                <td><strong>Sistema Resultante (GitHub Pages)</strong></td>
+                <td><code>https://SEU_USUARIO.github.io/petshop-web/</code></td>
+                <td>Aplicação web publicada em servidor de produção para acesso via navegador web.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="alert-box">
+        <strong>Atenção:</strong> Antes do envio final aos professores, substitua a expressão <code>SEU_USUARIO</code> nas URLs acima pelo seu identificador real cadastrado no GitHub.
+    </div>
+
+    <h2>2. OBJETIVO GERAL E METAS ESPECÍFICAS (AULAS 1 A 5)</h2>
+
+    <h3>2.1. Objetivo Geral</h3>
+    <p>
+        O objetivo geral da Fase 1 consiste no desenvolvimento da estrutura front-end do sistema de comércio eletrônico e agendamento de serviços do <strong>Pet Amigo Petshop</strong>. O projeto foi projetado com estrita observância das normas do W3C e das orientações acadêmicas da disciplina, empregando exclusivamente <strong>HTML5 semântico puro</strong>, sem qualquer arquivo, tag ou atributo de estilização CSS/Bootstrap e sem scripts dinâmicos em JavaScript.
+    </p>
+
+    <h3>2.2. Metas Específicas e Articulação Pedagógica com as Aulas 1 a 5</h3>
+    <ul>
+        <li>
+            <strong>Meta 1 – Estrutura Fundamental do Documento Web (Aula 1):</strong>
+            Implementar documentos HTML válidos estruturados a partir da declaração <code>&lt;!DOCTYPE html&gt;</code>, especificação de idioma <code>lang="pt-BR"</code>, codificação de caracteres <code>charset="UTF-8"</code> e meta tag <code>viewport</code>, garantindo a adequada renderização e arquitetura cliente-servidor em navegadores modernos e na plataforma GitHub Pages.
+        </li>
+        <li>
+            <strong>Meta 2 – Hierarquia Textual e Formatação Semântica (Aula 2):</strong>
+            Estruturar os textos por meio de uma hierarquia lógica de cabeçalhos (<code>&lt;h1&gt;</code> a <code>&lt;h4&gt;</code>) sem saltos estruturais, utilização de parágrafos (<code>&lt;p&gt;</code>), divisores contextuais (<code>&lt;hr&gt;</code>), marcação de ênfase (<code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>) e informações de contato com <code>&lt;address&gt;</code>.
+        </li>
+        <li>
+            <strong>Meta 3 – Navegação, Hiperlinks e Listas (Aula 3):</strong>
+            Conectar as páginas do sistema através de menus de navegação (<code>&lt;nav&gt;</code>) formados por listas não ordenadas (<code>&lt;ul&gt;</code> e <code>&lt;li&gt;</code>) e hiperlinks relativos (<code>&lt;a href="..."&gt;</code>). Incorporar âncoras internas para salto de seções e listas de definição (<code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, <code>&lt;dd&gt;</code>) para termos técnicos e perguntas frequentes (FAQ).
+        </li>
+        <li>
+            <strong>Meta 4 – Inserção de Mídias e Modelagem de Tabelas de Dados (Aula 4):</strong>
+            Integrar ilustrações vetoriais locais (SVG) com <code>&lt;figure&gt;</code>, <code>&lt;figcaption&gt;</code> e textos alternativos acessíveis (<code>alt</code>) em <code>&lt;img&gt;</code>. Desenvolver tabelas de dados complexas para exibição dos produtos e preços dos serviços utilizando <code>&lt;table&gt;</code>, <code>&lt;caption&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>, <code>&lt;th scope="col/row"&gt;</code> e mesclagem com <code>rowspan</code>.
+        </li>
+        <li>
+            <strong>Meta 5 – Estruturação Semântica HTML5 e Formulários Web (Aula 5):</strong>
+            Segmentar as páginas utilizando os elementos estruturais do HTML5: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code> e <code>&lt;footer&gt;</code>. Criar um formulário semântico e acessível de pré-agendamento de banho e tosa composto por <code>&lt;form&gt;</code>, <code>&lt;fieldset&gt;</code>, <code>&lt;legend&gt;</code>, <code>&lt;label for="..."&gt;</code>, campos tipados (<code>text</code>, <code>tel</code>, <code>email</code>, <code>number</code>, <code>date</code>, <code>radio</code>, <code>checkbox</code>, <code>select</code>, <code>textarea</code>) e botões de submissão e limpeza.
+        </li>
+    </ul>
+
+    <div class="page-break"></div>
+
+    <h2>3. ARQUITETURA DO SISTEMA WEB IMPLEMENTADO</h2>
+
+    <h3>3.1. Cabeçalho Padronizado (<code>&lt;header&gt;</code>)</h3>
+    <p>Presente em todas as páginas, congregando a identidade corporativa do Petshop, logotipo oficial, título principal h1, horários de atendimento da loja e barra de navegação com links para todas as páginas da plataforma.</p>
+
+    <h3>3.2. Corpo das Páginas (<code>&lt;body&gt;</code> / <code>&lt;main&gt;</code>)</h3>
+    <p>O sistema foi concebido de forma modular e integrada por meio de 4 páginas:</p>
+    <ul>
+        <li><strong>Página Inicial (<code>index.html</code>):</strong> Apresenta a empresa, destaca 2 produtos de cada categoria (com fotos, especificações e preços) e resume os serviços de banho e tosa com/sem tele-busca e tabela de horários semanais.</li>
+        <li><strong>Catálogo Completo de Produtos (<code>produtos.html</code>):</strong> Detalha a totalidade dos produtos divididos nas 3 categorias obrigatórias (apresentando 3 produtos por categoria, superando o requisito mínimo de 2 produtos), além de uma tabela consolidada de preços e códigos SKU.</li>
+        <li><strong>Serviços e Agendamento (<code>servicos.html</code>):</strong> Detalha o funcionamento do centro estético animal, logística da tele-busca (leva e traz), tabela completa de valores por porte animal e formulário semântico de reserva.</li>
+        <li><strong>Central de Ajuda e Manual (<code>ajuda.html</code>):</strong> Documentação de apoio ao usuário descrevendo o propósito do sistema, regras de navegação, formulário, conformidade W3C e FAQ.</li>
+    </ul>
+
+    <h3>3.3. Rodapé Padronizado (<code>&lt;footer&gt;</code>)</h3>
+    <p>Contém informações de contato físico e digital (endereço, telefones, e-mail), mapa do site secundário, identificação acadêmica do estudante (PUCRS Online - Fundamentos WEB) e declaração de direitos autorais.</p>
+
+    <h2>4. DETALHAMENTO DO CATÁLOGO DE PRODUTOS</h2>
+    <p>Relação de produtos implementados com fotos locais em SVG, especificações e valores em conformidade com o edital:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Categoria</th>
+                <th>Nome do Produto</th>
+                <th>Especificações Principais</th>
+                <th>Valor Unitário</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3"><strong>1. Acessórios</strong></td>
+                <td>Cama Nuvem Confort Ortopédica (G)</td>
+                <td>Pelúcia antialérgica, enchimento siliconado, base antiderrapante, 80 cm de diâmetro.</td>
+                <td>R$ 149,90</td>
+            </tr>
+            <tr>
+                <td>Peitoral Antipuxão + Guia Reforçada (M)</td>
+                <td>Nylon militar, forro em neoprene respirável, costuras refletivas, guia de 1,50 m.</td>
+                <td>R$ 89,90</td>
+            </tr>
+            <tr>
+                <td>Brinquedo Mordedor Interativo Dispenser</td>
+                <td>Borracha atóxica de grau alimentício, cavidade para petiscos e massageador de gengiva.</td>
+                <td>R$ 45,50</td>
+            </tr>
+            <tr>
+                <td rowspan="3"><strong>2. Rações Não Perecíveis</strong></td>
+                <td>Ração Seca Super Premium Cães Adultos (15 kg)</td>
+                <td>Frango e arroz integral, 26% de proteína, condroitina e glicosamina para articulações.</td>
+                <td>R$ 229,90</td>
+            </tr>
+            <tr>
+                <td>Ração Seca Premium Gatos Castrados (3 kg)</td>
+                <td>Sabor salmão, 34% de proteína, controle do pH urinário, calorias reduzidas e L-carnitina.</td>
+                <td>R$ 78,90</td>
+            </tr>
+            <tr>
+                <td>Ração Seca Premium Filhotes (10,1 kg)</td>
+                <td>Carne e vegetais, 28% de proteína, enriquecida com DHA para desenvolvimento cerebral.</td>
+                <td>R$ 139,00</td>
+            </tr>
+            <tr>
+                <td rowspan="3"><strong>3. Higiene e Limpeza</strong></td>
+                <td>Tapete Higiênico Carvão Ativado (30 un.)</td>
+                <td>80 x 60 cm, 6 camadas com carvão neutralizador de odores, fitas adesivas nos cantos.</td>
+                <td>R$ 69,90</td>
+            </tr>
+            <tr>
+                <td>Shampoo Neutro Hipoalergênico &amp; Cond. (500 ml)</td>
+                <td>Extrato de camomila e aveia coloidal, pH fisiológico neutro, 0% sulfatos pesados e sal.</td>
+                <td>R$ 34,90</td>
+            </tr>
+            <tr>
+                <td>Fraldas Descartáveis Anatômicas Pet (12 un.)</td>
+                <td>Tamanho M, formato anatômico para cauda, elásticos macios e fechos reposicionáveis.</td>
+                <td>R$ 42,90</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="page-break"></div>
+
+    <h2>5. DETALHAMENTO DOS SERVIÇOS DE BANHO, TOSA E TELE-BUSCA</h2>
+    <p>O centro estético atende em duas modalidades: <strong>Sem Tele-Busca</strong> (balcão) e <strong>Com Tele-Busca</strong> (veículo climatizado com caixas individuais no raio de 10 km). Abaixo estão discriminados os serviços e valores praticados:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Serviço Oferecido</th>
+                <th>Procedimentos e Materiais Inclusos</th>
+                <th>Porte do Animal</th>
+                <th>Sem Tele-Busca</th>
+                <th>Com Tele-Busca</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3"><strong>Banho Completo Tradicional</strong></td>
+                <td rowspan="3">Água morna regulada, produtos dermatológicos neutros, secagem com soprador silencioso, corte de unhas, higienização dos ouvidos e escovação.</td>
+                <td>Pequeno (até 8 kg)</td>
+                <td>R$ 55,00</td>
+                <td>R$ 80,00</td>
+            </tr>
+            <tr>
+                <td>Médio (8 a 18 kg)</td>
+                <td>R$ 65,00</td>
+                <td>R$ 90,00</td>
+            </tr>
+            <tr>
+                <td>Grande (acima 18 kg)</td>
+                <td>R$ 85,00</td>
+                <td>R$ 115,00</td>
+            </tr>
+            <tr>
+                <td rowspan="3"><strong>Tosa Higiênica + Banho Completo</strong></td>
+                <td rowspan="3">Todos os procedimentos do Banho Completo mais aparo higiênico dos pelos das patas, região perianal/genital e contorno dos olhos.</td>
+                <td>Pequeno (até 8 kg)</td>
+                <td>R$ 75,00</td>
+                <td>R$ 100,00</td>
+            </tr>
+            <tr>
+                <td>Médio (8 a 18 kg)</td>
+                <td>R$ 85,00</td>
+                <td>R$ 110,00</td>
+            </tr>
+            <tr>
+                <td>Grande (acima 18 kg)</td>
+                <td>R$ 110,00</td>
+                <td>R$ 140,00</td>
+            </tr>
+            <tr>
+                <td rowspan="3"><strong>Tosa Geral da Raça + Banho</strong></td>
+                <td rowspan="3">Banho completo, hidratação profunda, tosa estilizada da raça na máquina ou tesoura, corte de unhas e gravata/laço comemorativo.</td>
+                <td>Pequeno (até 8 kg)</td>
+                <td>R$ 100,00</td>
+                <td>R$ 125,00</td>
+            </tr>
+            <tr>
+                <td>Médio (8 a 18 kg)</td>
+                <td>R$ 120,00</td>
+                <td>R$ 145,00</td>
+            </tr>
+            <tr>
+                <td>Grande (acima 18 kg)</td>
+                <td>R$ 150,00</td>
+                <td>R$ 180,00</td>
+            </tr>
+            <tr>
+                <td><strong>Banho Especial para Felinos</strong></td>
+                <td>Sala silenciosa exclusiva para gatos, feromônios calmantes e secagem sem barulho.</td>
+                <td>Gatos (Todos os portes)</td>
+                <td>R$ 80,00</td>
+                <td>R$ 105,00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>6. ARQUIVO DE AJUDA E DOCUMENTAÇÃO TÉCNICA</h2>
+    <p>O atendimento ao requisito de fornecimento do arquivo de ajuda foi estruturado em dois níveis:</p>
+    <ol>
+        <li><strong>Documento README.md no Repositório GitHub:</strong> Guia técnico completo contendo a visão geral do sistema, arquitetura de pastas, mapeamento com as Aulas 1 a 5 e instruções de clonagem e implantação no GitHub Pages.</li>
+        <li><strong>Página Web de Ajuda (<code>ajuda.html</code>):</strong> Módulo integrado ao sistema web acessível a clientes e usuários, apresentando o manual de navegação, FAQ semântico (com tags <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code> e <code>&lt;dd&gt;</code>), conformidade com os padrões de acessibilidade da W3C e mapa do site em formato de árvore de hiperlinks.</li>
+    </ol>
+
+    <h2>7. PROCEDIMENTO DE PUBLICAÇÃO NO GITHUB PAGES</h2>
+    <p>Para hospedar a plataforma na nuvem via GitHub Pages, foram executados os seguintes passos:</p>
+    <div class="code-box">
+1. Inicialização e commit no repositório local:
+   cd petshop-web
+   git init
+   git add .
+   git commit -m "feat: entrega Fase 1 do Projeto Petshop - Fundamentos WEB (PUCRS Online)"
+   git branch -M main
+
+2. Vinculação remota e envio para o GitHub:
+   git remote add origin https://github.com/SEU_USUARIO/petshop-web.git
+   git push -u origin main
+
+3. Configuração do GitHub Pages no repositório:
+   - Acessar "Settings" -> menu lateral "Pages"
+   - Em "Build and deployment" -> "Source", selecionar "Deploy from a branch"
+   - Escolher Branch: "main" e pasta "/ (root)" -> clicar em "Save"
+   - O site estará acessível em: https://SEU_USUARIO.github.io/petshop-web/
+    </div>
+
+    <h2>8. CONCLUSÃO</h2>
+    <p>
+        A Fase 1 do Projeto da Disciplina de Fundamentos WEB atinge plenamente todos os objetivos acadêmicos e técnicos estipulados. A plataforma web entrega uma estrutura semântica robusta, acessível e modular, garantindo que o Petshop conte com um catálogo de produtos detalhado, serviços precificados com total transparência quanto à tele-busca e uma experiência de navegação impecável em HTML puro. O projeto encontra-se preparado para receber na Fase 2 a estilização visual com CSS e as regras de interatividade com JavaScript.
+    </p>
+
+</body>
+</html>
